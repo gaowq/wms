@@ -17,6 +17,16 @@ namespace wms.Controllers
             AlanDao = alanDao;
         }
 
+        public ActionResult<string> Create2(string name)
+        {
+            if (string.IsNullOrEmpty(name.Trim()))
+            {
+                return "分类名不能为空";
+            }else{
+                return "2343";
+            }
+        }
+
         //插入数据
         public ActionResult<string> Create(string name)
         {
